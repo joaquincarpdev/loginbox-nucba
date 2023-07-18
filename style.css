@@ -148,15 +148,20 @@ table {
 /*---------------------------------------*/
 /*---------------------------------------*/
 
+body {
+    background-color: #F2F2F2;
+}
+
 form.login {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
     margin: auto;
     margin-top: 5rem;
     max-width: 480px;
-    border: 0.2rem solid black;
     border-radius: 0.25rem;
+    box-shadow: 0.05rem 0.05rem 0.25rem gray;
 }
 
 .box {
@@ -197,7 +202,7 @@ form.login {
 .box-input input::placeholder {
     font-family: Kanit-Regular;
     text-align: start;
-}   
+}
 
 
 input[type="email"] {
