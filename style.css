@@ -160,6 +160,7 @@ form.login {
     background-color: white;
     margin: auto;
     margin-top: 5rem;
+    margin-bottom: 5rem;
     max-width: 480px;
     border-radius: 0.25rem;
     box-shadow: 0.05rem 0.05rem 0.25rem gray;
