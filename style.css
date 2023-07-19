@@ -199,6 +199,7 @@ form.login {
     border: 0.15rem solid black;
     padding: 0rem 0.5rem;
     font-size: 1rem;
+    outline: none;
 }
 
 .box-input input::placeholder {
@@ -213,10 +214,6 @@ input[type="email"] {
     border-bottom: 0.05rem solid black;
 }
 
-input[type="email"]:focus {
-    border-bottom: none;
-}
-
 
 input[type="password"] {
     border-bottom-right-radius: 0.25rem;
@@ -224,9 +221,6 @@ input[type="password"] {
     border-top: 0.05rem solid black;
 }
 
-input[type="password"]:focus {
-    border-top: none;
-}
 
 .box-btn {
     display: flex;
