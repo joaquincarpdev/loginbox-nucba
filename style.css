@@ -211,6 +211,8 @@ form.login {
 input[type="email"] {
     border-top-right-radius: 0.25rem;
     border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
     border-bottom: 0.05rem solid black;
 }
 
@@ -218,6 +220,8 @@ input[type="email"] {
 input[type="password"] {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
     border-top: 0.05rem solid black;
 }
 
@@ -238,10 +242,11 @@ input[type="password"] {
 #btn-log {
     width: 100%;
     height: 3rem;
-    background-color: #277FC3;
+    background-color: #4ea4c3;
     color: white;
     border-radius: 0.1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
 }
 
 #btn-lostpassword {
@@ -249,7 +254,7 @@ input[type="password"] {
     height: 1.5rem;
     border-radius: 0.8rem;
     background-color: white;
-    border: 0.1rem solid rgb(17, 34, 61);
+    border: 0.1rem solid #61b07f;
     text-align: center;
-    color: black;
+    color: #61b07f;
 }
