@@ -3,6 +3,11 @@
     src: url(fonts/Kanit-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Ubuntu-Light";
+    src: url(fonts/Ubuntu-Light.ttf);
+}
+
 * {
     font-family: "Kanit";
 }
@@ -139,9 +144,6 @@ table {
     border-spacing: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 
 /*---------------------------------------*/
@@ -157,15 +159,16 @@ form.login {
     width: 70vw;
     flex-direction: column;
     align-items: center;
-    background: rgb(57,155,176);
-    background: linear-gradient(45deg, rgba(57,155,176,1) 0%, rgba(0,69,80,1) 0%, rgba(99,212,236,1) 100%);
+    background: rgb(57, 155, 176);
+    background: linear-gradient(45deg, rgba(57, 155, 176, 1) 0%, rgba(0, 69, 80, 1) 0%, rgba(99, 212, 236, 1) 100%);
     margin: auto;
     margin-top: 5rem;
     margin-bottom: 5rem;
     max-width: 360px;
     border-radius: 0.25rem;
     box-shadow: 0.05rem 0.05rem 0.25rem gray;
-    row-gap: 1.3rem;
+    row-gap: 1.5rem;
+
 }
 
 .box {
@@ -192,6 +195,7 @@ form.login {
 .box-logo p {
     font-size: 1.3rem;
     color: white;
+    display: inline-block;
 }
 
 
@@ -203,7 +207,6 @@ form.login {
     width: 99.6%;
     height: 3rem;
     border: none;
-    /*border: 0.15rem solid #004550;*/
     padding: 0rem 0.5rem;
     font-size: 1rem;
     outline: none;
@@ -218,15 +221,14 @@ form.login {
 }
 
 .box-input span {
-    display: inline;
     text-decoration: none;
     color: red;
 }
 
 .box-input input::placeholder {
-    font-family: Kanit-Regular;
     text-align: start;
     font-size: 0.8rem;
+    font-family: "Kanit-Regular";
 }
 
 
@@ -249,15 +251,9 @@ input[type="password"] {
 .box-btn {
     display: flex;
     flex-direction: column;
-    row-gap: 1.5rem;
-
+    row-gap: 1rem;
 }
 
-.box-btn button {
-    border: none;
-    cursor: pointer;
-    font-family: "Kanit-Regular";
-}
 
 #btn-log {
     width: 100%;
@@ -265,17 +261,16 @@ input[type="password"] {
     background-color: #0c4e58;
     border: 1px solid white;
     color: #8cd3e2;
-    border-radius: 0.1rem;
-    font-size: 1.3rem;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
+    cursor: pointer;
+    font-family: "Kanit-Regular";
 }
 
-#btn-lostpassword {
-    width: 60%;
-    height: 1.5rem;
-    border-radius: 0.8rem;
-    background-color: white;
-    border: 0.1rem solid #004550;
-    text-align: center;
-    color: #004550;
+
+.box-btn a {
+    color: white;
+    font-size: 0.8rem;
+    font-family: "Ubuntu-Light";
 }
