@@ -154,57 +154,79 @@ body {
 
 form.login {
     display: flex;
-    width: 90vw;
+    width: 70vw;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background: rgb(57,155,176);
+    background: linear-gradient(45deg, rgba(57,155,176,1) 0%, rgba(0,69,80,1) 0%, rgba(99,212,236,1) 100%);
     margin: auto;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    max-width: 480px;
+    max-width: 360px;
     border-radius: 0.25rem;
     box-shadow: 0.05rem 0.05rem 0.25rem gray;
+    row-gap: 1.3rem;
 }
 
 .box {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     align-items: center;
     margin: auto;
     padding: 1rem;
+    row-gap: 0.1rem;
 }
 
-.box-head {
-    align-self: stretch;
+.box-logo {
+    width: 100%;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    background-color: #0c4e58;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 0.2rem;
 }
 
-.box-head img[src="img/login.png"] {
-    width: 120px;
-    display: block;
-    margin: auto;
+.box-logo p {
+    font-size: 1.3rem;
+    color: white;
 }
 
-.login p {
-    padding: 1rem;
-    font-size: 2rem;
-    text-align: center;
-    color: black;
-    font-family: "Kanit-Regular";
+
+.box-logo img[src="img/login.png"] {
+    width: 48px;
 }
 
 .box-input input {
     width: 99.6%;
     height: 3rem;
-    border: 0.15rem solid black;
+    border: none;
+    /*border: 0.15rem solid #004550;*/
     padding: 0rem 0.5rem;
     font-size: 1rem;
     outline: none;
 }
 
+.box-input p {
+    width: 100%;
+    text-align: left;
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+}
+
+.box-input span {
+    display: inline;
+    text-decoration: none;
+    color: red;
+}
+
 .box-input input::placeholder {
     font-family: Kanit-Regular;
     text-align: start;
+    font-size: 0.8rem;
 }
 
 
@@ -213,7 +235,6 @@ input[type="email"] {
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
-    border-bottom: 0.05rem solid black;
 }
 
 
@@ -222,7 +243,6 @@ input[type="password"] {
     border-bottom-left-radius: 0.25rem;
     border-top-left-radius: 0%;
     border-top-right-radius: 0%;
-    border-top: 0.05rem solid black;
 }
 
 
@@ -242,8 +262,9 @@ input[type="password"] {
 #btn-log {
     width: 100%;
     height: 3rem;
-    background-color: #4ea4c3;
-    color: white;
+    background-color: #0c4e58;
+    border: 1px solid white;
+    color: #8cd3e2;
     border-radius: 0.1rem;
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -254,7 +275,7 @@ input[type="password"] {
     height: 1.5rem;
     border-radius: 0.8rem;
     background-color: white;
-    border: 0.1rem solid #61b07f;
+    border: 0.1rem solid #004550;
     text-align: center;
-    color: #61b07f;
+    color: #004550;
 }
